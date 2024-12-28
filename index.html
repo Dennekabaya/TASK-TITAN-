@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Titan | Landing Page</title>
+<link rel="stylesheet" href="public/css/landing.css">
+
+
+</head>
+<body>
+<header class="hero">
+<div class="hero-content">
+  <h1>Achieve Your Goals with <span class="brand">Task Titan</span></h1>
+  <p>Plan your day, track your projects, and stay on top of your tasks effortlessly.</p>
+  <button class="btn-primary" id="ExploreBtn">Explore</button>
+  </div>
+</header>
+
+<section class="features">
+  <h2>Features</h2>
+<div class="feature-list">
+ <div class="feature">
+  <h3>📅 Daily Schedule</h3>
+  <p>Plan your tasks hour by hour for maximum productivity.</p>
+ </div>
+ <div class="feature">
+   <h3>🎯 Monthly Targets</h3>
+   <p>Set goals and track your progress every month.</p>
+  </div>
+  <div class="feature">
+  <h3>📊 Progress Tracking</h3>
+  <p>Visualize your accomplishments with detailed insights.</p>
+  </div>
+  </div>
+</section>
+<section class="how-it-works">
+  <h2>How It Works</h2>
+  <div class="steps">
+   <div class="step">
+   <h3>1. Sign Up</h3>
+   <p>Create your account to get started.</p>
+   </div>
+ <div class="step">
+    <h3>2. Plan Your Tasks</h3>
+    <p>Add daily schedules and monthly targets.</p>
+  </div>
+  <div class="step">
+  <h3>3. Achieve Your Goals</h3>
+  <p>Stay productive and track your progress.</p>
+ </div>
+ </div>
+ <button class="btn-primary" id="getStartedBtn">Get Started</button>
+</section>
+
+
+ <footer class="footer">
+  <p>Powered by <strong id="logo">HumanGpt🤖</strong></p>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <p>&copy; 2024 . All rights reserved.</p>
+</footer>
+<!-- Login & Sign Up Modal Section -->
+<div class="modal" id="loginSignupModal">
+ <div class="modal-content">
+ <span class="close" id="closeModal">&times;</span>
+ <h2>Welcome to <div id="logo">Task Titan</div></h2>
+    <p>To continue, please log in or sign up.</p>
+    <button class="btn" id="loginBtn">Login</button>
+    <button class="btn" id="signupBtn">Sign Up</button>
+
+    <!-- Login Form (hidden initially) -->
+<div id="loginForm" style="display:none;">
+ <h3>Login</h3>
+<form id="loginFormFields">
+<input type="email" placeholder="email" required class="form-input" id="loginFormFields_email"><br>
+<input type="password" placeholder="Password" required class="form-input" id="loginFormFields_password"><br>
+<button type="submit" class="form-button">Login</button>
+</form>
+<p style="margin-top: 15px; text-align: center;">
+<a href="#" id="forgotPasswordLink" class="forgot-link">Forgot Password?</a>
+ </p>
+</div>
+      <!-- Forgot Password Modal -->
+<!-- Forgot Password Modal -->
+<div id="forgotPasswordModal" style="display:none;">
+  <div class="modal-content">
+    <h3>Reset Password</h3>
+    <!-- Email input form -->
+    <form id="forgotPasswordForm">
+      <input type="email" placeholder="Enter your email" required class="form-input" id="forgotPasswordForm_email">
+      <button type="submit" class="form-button">Get Reset Code</button>
+    </form>
+
+    <!-- Reset Code input form (hidden initially) -->
+    <form id="resetCodeForm" style="display:none;">
+      <input type="text" placeholder="Enter reset code" required class="form-input" id="resetCode">
+      <button type="submit" class="form-button">Submit Code</button>
+    </form>
+
+    <!-- New Password input form (hidden initially) -->
+    <form id="newPasswordForm" style="display:none;">
+      <input type="password" placeholder="Enter new password" required class="form-input" id="newPassword">
+      <button type="submit" class="form-button">Save New Password</button>
+    </form>
+
+    <button id="close_Modal" class="close-button">Close</button>
+  </div>
+</div>
+
+   <!-- Sign Up Form (hidden initially) -->
+ <div id="signupForm" style="display:none;">
+<h3>Sign Up</h3>
+  <form id="signupFormFields">
+  <input type="text" placeholder="Username" required id="signupForm_username"><br>
+  <input type="email" placeholder="Email" required id="signupForm_email"><br>
+  <input type="password" placeholder="Password" required id="signupForm_password"><br>
+  <button type="submit">Sign Up</button>
+ </form>
+</div>
+</div>
+</div>
+<!--alert modal-->
+ <div id="custom-alert" class="custom-alert">
+ <div class="alert-content">
+ <p id="alert-message">This is an alert!</p>
+ <button id="close-alert">OK</button>
+</div>
+</div>
+
+ <!--notification-->
+ <div id="notification" class="notification">
+ <p id="notification-message">This is a notification!</p>
+ <button id="close-notification" style="background:#007bff;width:100%;border:none;">×</button>
+ </div>
+<script src="public/js/landing.js"></script>
+</body>
+</html>

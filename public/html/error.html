@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Error - Page Not Found</title>
+    <link rel="stylesheet">
+</head>
+  <style>
+  @font-face {
+  font-family: 'ank';
+  src: url('public/assets/fonts/AnkhSanctuary-PVK0B.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+  body{
+  background-color: #1e2336;
+  color: #e4e4e4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;margin-top: 50px;
+  display: flex;justify-content: center;
+  align-items: center;  height: 100vh;
+  flex-direction: column;}.error-page {
+ text-align: center; margin-top: 20px;}
+.error-page h1 {
+  font-size: 6rem; font-weight: bold;
+  color: #53e3a6;text-transform: uppercase;
+  text-shadow:2px 2px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;}
+.error-page h2 {
+  font-size: 2rem;color: #f3f4f8;  margin-bottom: 30px;}
+p{ font-size: 1.1rem;
+   color: #b0bec5;margin-bottom: 40px;}
+.back-to-home {
+  color: #53e3a6;text-decoration: none; font-size: 1.3rem;
+  padding: 10px 20px;border-radius: 5px;
+  background-color: #2a2d43;
+transition: background-color 0.3s ease, color 0.3s ease;}
+.back-to-home:hover {
+  color: #1e2336;background-color: #53e3a6;
+  text-decoration: none;}
+.logo {
+font-family:ank;font-size:1.5rem;color:#f9fafb;letter-spacing: 2px;margin-top: 50px;
+  font-weight: 700;}
+/* Add some cool effects */
+@keyframes fadeIn {
+  0% {opacity: 0; } 100% {opacity: 1;}}
+body, .error-page {
+ animation: fadeIn 1s ease-out;}
+ </style>
+<body>
+<div class="error-page">
+<h1>404</h1>
+<h2>Oops! Page Not Found</h2>
+<p>Hold tight! This page is getting a makeover. Check back soon for something amazing!</p>
+   <a href="/home" class="back-to-home">Go Back to Home</a>
+<h1 class="logo" style="font-size:35px">Task Titan</h1>
+    </div>
+    <script>
+      // Dynamically set the 'href' of the 'Go Back to Home' link
+document.addEventListener('DOMContentLoaded', () => {  const backToHomeLink = document.querySelector('.back-to-home');
+  if (backToHomeLink) {
+    backToHomeLink.href = '/'; // Ensure the link takes the user back to home
+  }});
+    </script>
+</body>
+</html>
