@@ -12,13 +12,13 @@ body {
 }
 @font-face {
   font-family: 'orb';
-  src: url('public/assets/fonts/AnkhSanctuary-PVK0B.ttf') format('woff');
+  src: url('.../assets/fonts/AnkhSanctuary-PVK0B.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
             /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(26, 32, 44, 0.8)), url('public/asset/images/hero_background.png');
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(26, 32, 44, 0.8)), url('.../assets/images/hero_background.png');
   background-size: cover;
   background-position: center;
   color: #fff;
